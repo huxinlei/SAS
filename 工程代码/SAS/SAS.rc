@@ -1,0 +1,699 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SAS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SAS.ico"
+IDR_SASTYPE             ICON    DISCARDABLE     "res\\SASDoc.ico"
+IDI_ICONE               ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "程序出口(&F)"
+    BEGIN
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "新建病例(&N)"
+    BEGIN
+        MENUITEM "新建病例",                    ID_NEWSCASE
+    END
+    POPUP "设置(&S)"
+    BEGIN
+        MENUITEM "图形颜色设置",                ID_COLORSET
+        MENUITEM "增益文字设置",                ID_WORDANDSPEED
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 SAS(&A)...",             ID_APP_ABOUT
+    END
+END
+
+IDR_MENUPOP MENU DISCARDABLE 
+BEGIN
+    POPUP "显示模式设置"
+    BEGIN
+        MENUITEM "0.02秒模式",                  ID_WSPEED002
+        MENUITEM "0.2秒模式",                   ID_WSPEED02
+        MENUITEM "1秒模式",                     ID_WSPEED1
+        MENUITEM "2秒模式",                     ID_WSPEED2
+        MENUITEM "1分钟模式",                   ID_WSPEED1M
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SAS"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SAS 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "三块石头工作室 版权所有 (C) 2012",IDC_STATIC,40,25,119,
+                    8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SAS_FORM DIALOG DISCARDABLE  0, 0, 842, 477
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "病人信息",IDC_STATIC,569,7,272,288
+    CONTROL         "List2",IDC_PLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,11,11,541,284
+    PUSHBUTTON      "显示病例图",IDC_OPEN,460,304,50,14
+    PUSHBUTTON      "删除",IDC_DELETE,643,304,50,14
+    PUSHBUTTON      "保存",IDC_SAVE,711,303,50,14
+    PUSHBUTTON      "重置",IDC_CANCEL,780,303,50,14
+    LTEXT           "病例ID",IDC_STATIC,575,25,25,8
+    LTEXT           "性别  ",IDC_STATIC,712,25,25,8
+    LTEXT           "姓  *",IDC_STATIC,577,47,21,8
+    LTEXT           "名    *",IDC_STATIC,713,48,29,8
+    LTEXT           "出生日期",IDC_STATIC,578,71,33,8
+    LTEXT           "年龄",IDC_STATIC,714,71,17,8
+    LTEXT           "身高",IDC_STATIC,579,96,17,8
+    LTEXT           "体重",IDC_STATIC,713,97,17,8
+    LTEXT           "诊断医生",IDC_STATIC,580,120,33,8
+    LTEXT           "记录医生",IDC_STATIC,712,121,33,8
+    LTEXT           "记录开始日期",IDC_STATIC,579,146,49,8
+    LTEXT           "开始时间",IDC_STATIC,713,145,33,8
+    LTEXT           "记录结束日期",IDC_STATIC,580,172,49,8
+    LTEXT           "结束时间",IDC_STATIC,713,171,33,8
+    LTEXT           "备注",IDC_STATIC,581,240,17,8
+    EDITTEXT        IDC_COMMENT,611,225,209,58,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SID,633,24,64,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_SNAME1,634,44,64,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SNAME2,757,45,70,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SSEX,757,22,70,51,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_SBIRTHDAY,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,634,67,65,15
+    EDITTEXT        IDC_SAGE,757,69,69,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_SHIGH,634,94,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SWEIGHT,758,95,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIAGNOSIS,633,118,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECORD,757,120,67,14,ES_AUTOHSCROLL
+    LTEXT           "总时间",IDC_STATIC,582,198,25,8
+    EDITTEXT        IDC_TOTALTIME,633,197,62,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "DateTimePicker1",IDC_STARTDATE1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,632,143,68,15
+    CONTROL         "DateTimePicker1",IDC_STARTDATE2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,758,142,
+                    68,15
+    CONTROL         "DateTimePicker1",IDC_SENDDATE1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,633,169,68,15
+    CONTROL         "DateTimePicker1",IDC_SENDDATE2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP | 
+                    0x8,758,168,68,15
+    CONTROL         145,IDC_Picture,"Static",SS_BITMAP,13,367,191,103
+    EDITTEXT        IDC_PAD,216,367,548,103,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "便笺锁定",IDC_PADW,775,371,50,14
+    PUSHBUTTON      "便笺清空",IDC_PADR,775,419,50,14
+    PUSHBUTTON      "姓名查询",IDC_CONSULT,573,305,50,14
+END
+
+IDD_SCASEDISPLAY_DIALOG DIALOG DISCARDABLE  0, 0, 509, 329
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "病例信息显示"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_SCASENEW DIALOG DISCARDABLE  0, 0, 264, 257
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建病例"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "导入病例",IDOK,45,230,50,14
+    PUSHBUTTON      "取消",IDCANCEL,154,231,50,14
+    LTEXT           "病例ID",IDC_STATIC,25,13,19,8
+    LTEXT           "性别  ",IDC_STATIC,137,13,19,8
+    LTEXT           "姓  *",IDC_STATIC,26,30,16,8
+    LTEXT           "名    *",IDC_STATIC,138,30,27,8
+    LTEXT           "出生日期",IDC_STATIC,26,48,32,8
+    LTEXT           "年龄",IDC_STATIC,138,48,20,8
+    LTEXT           "身高",IDC_STATIC,26,66,28,8
+    LTEXT           "体重",IDC_STATIC,138,67,22,8
+    LTEXT           "诊断医生",IDC_STATIC,26,84,36,8
+    LTEXT           "记录医生",IDC_STATIC,136,85,33,8
+    LTEXT           "记录日期",IDC_STATIC,27,104,34,8
+    LTEXT           "开始时间",IDC_STATIC,137,103,34,8
+    LTEXT           "备注",IDC_STATIC,28,147,19,8
+    EDITTEXT        IDC_COMMENT,61,138,163,44,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SID,79,12,50,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_SNAME1,80,27,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SNAME2,171,28,53,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SSEX,171,11,53,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_SBIRTHDAY,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,79,45,49,12
+    EDITTEXT        IDC_SAGE,171,46,54,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_SHIGH,78,65,49,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SWEIGHT,171,66,55,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIAGNOSIS,78,83,49,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECORD,171,84,54,12,ES_AUTOHSCROLL
+    LTEXT           "病例文件",IDC_STATIC,29,205,33,8
+    EDITTEXT        IDC_FILEPATH,64,203,140,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_FILESCAN,208,201,38,14
+    CONTROL         "DateTimePicker2",IDC_SSTARTDATE1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,77,101,51,15
+    CONTROL         "DateTimePicker2",IDC_SSTARTDATE2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,171,101,
+                    54,15
+END
+
+IDD_COLORSET DIALOG DISCARDABLE  0, 0, 308, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置颜色"
+FONT 12, "System"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,66,162,50,14
+    PUSHBUTTON      "取消",IDCANCEL,174,162,50,14
+    GROUPBOX        "通道颜色设置",IDC_STATIC,14,14,138,136
+    GROUPBOX        "事件及背景颜色设置",IDC_STATIC,157,14,138,136
+    LTEXT           "气流通道",IDC_STATIC,27,38,33,8
+    LTEXT           "血氧通道",IDC_STATIC,26,65,33,8
+    LTEXT           "脉搏通道",IDC_STATIC,26,94,33,8
+    LTEXT           "氧容积通道",IDC_STATIC,27,123,41,8
+    LTEXT           "                              ",IDC_NFLOW,74,37,65,12,
+                    SS_NOTIFY
+    LTEXT           "                              ",IDC_NSPO2,74,64,65,12,
+                    SS_NOTIFY
+    LTEXT           "                              ",IDC_NPULSE,74,92,65,13,
+                    SS_NOTIFY
+    LTEXT           "                              ",IDC_NPLETH,74,123,65,12,
+                    SS_NOTIFY
+    LTEXT           "呼吸暂停",IDC_STATIC,170,37,33,8
+    LTEXT           "低通气",IDC_STATIC,170,65,33,8
+    LTEXT           "氧减事件",IDC_STATIC,170,93,33,8
+    LTEXT           "                              ",IDC_APNEAB,218,37,65,12,
+                    SS_NOTIFY
+    LTEXT           "                              ",IDC_HYPOPNEAB,219,65,65,
+                    12,SS_NOTIFY
+    LTEXT           "                              ",IDC_DESCENDB,219,93,65,
+                    12,SS_NOTIFY
+    LTEXT           "背景设置",IDC_STATIC,170,122,33,8
+    LTEXT           "                              ",IDC_BACKC,220,121,65,12,
+                    SS_NOTIFY
+END
+
+IDD_CONFIGSET DIALOG DISCARDABLE  0, 0, 229, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "显示模式及文字大小设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,172,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,172,24,50,14
+    LTEXT           "模式设置",IDC_STATIC,18,20,33,8
+    LTEXT           "上下显示条文字大小（12-16）",IDC_STATIC,18,45,107,8
+    CONTROL         "Slider1",IDC_TBWORD,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,128,43,49,15
+    LTEXT           "左右显示条文字大小（12-16）",IDC_STATIC,18,64,107,8
+    CONTROL         "Slider1",IDC_RLWORD,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,128,63,49,15
+    COMBOBOX        IDC_MODESHOW,63,18,90,76,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_EVENTDIALOG DIALOG DISCARDABLE  0, 0, 393, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "事件列表"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Tree1",IDC_EVENTTREE,"SysTreeView32",WS_BORDER | 
+                    WS_TABSTOP,6,8,67,182
+    CONTROL         "List1",IDC_EVENTLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,77,7,309,184
+END
+
+IDD_RESULT DIALOG DISCARDABLE  0, 0, 255, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "事件统计"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_APNEAC,8,16,74,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_APNEAI,91,16,76,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_HYPOPC,176,16,70,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_DESCENDC,90,39,76,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_DESCENDI,177,40,70,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_HYPOPI,8,38,74,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_MAXA,8,59,106,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_MAXH,141,59,106,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_SPO2SHOW,"Static",SS_ETCHEDFRAME,8,79,238,81
+END
+
+IDD_SHOWRESULT DIALOG DISCARDABLE  0, 0, 280, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "事件统计"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_APNEAC,21,15,74,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_APNEAI,104,15,76,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_HYPOPC,189,15,70,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_DESCENDC,103,38,76,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_DESCENDI,190,39,70,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_HYPOPI,21,37,74,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_MAXA,21,58,106,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_MAXH,154,58,106,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_SPO2SHOW,"Static",SS_ETCHEDFRAME,21,78,238,81
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SAS Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SAS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SAS.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SAS 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SAS_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 833
+        TOPMARGIN, 7
+    END
+
+    IDD_SCASEDISPLAY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 502
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+    END
+
+    IDD_SCASENEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_COLORSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 301
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_CONFIGSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_EVENTDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 391
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_RESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 252
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_SHOWRESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SAS_FORM DLGINIT
+BEGIN
+    IDC_SSEX, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_SSEX, 0x403, 3, 0
+0xaec5, "\000" 
+    IDC_SSEX, 0x403, 7, 0
+0xb4ce, 0xeecc, 0xebc8, "\000" 
+    0
+END
+
+IDD_SCASENEW DLGINIT
+BEGIN
+    IDC_SSEX, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_SSEX, 0x403, 3, 0
+0xaec5, "\000" 
+    IDC_SSEX, 0x403, 7, 0
+0xb4ce, 0xeecc, 0xebc8, "\000" 
+    0
+END
+
+IDD_CONFIGSET DLGINIT
+BEGIN
+    IDC_MODESHOW, 0x403, 9, 0
+0x2e30, 0x3230, 0xebc3, 0xd3d6, "\000" 
+    IDC_MODESHOW, 0x403, 8, 0
+0x2e30, 0xc332, 0xd6eb, 0x00d3, 
+    IDC_MODESHOW, 0x403, 6, 0
+0xc331, 0xd6eb, 0x00d3, 
+    IDC_MODESHOW, 0x403, 6, 0
+0xc332, 0xd6eb, 0x00d3, 
+    IDC_MODESHOW, 0x403, 6, 0
+0xb731, 0xd6d6, 0x00d3, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSORUP            CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\sanshiwork3.bmp"
+IDR_TOOLBAR1            BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR DISCARDABLE  62, 17
+BEGIN
+    BUTTON      INSERT_A
+    BUTTON      INSERT_D
+    BUTTON      INSERT_H
+    BUTTON      DELETE_E
+    BUTTON      UPDATE_EE
+    BUTTON      RESULT_SHOW
+    BUTTON      EVENT_SHOW
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "SAS\n\nSAS\n\n\nSAS.Document\nSAS Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SAS"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    INSERT_A                "添加呼吸暂停事件\n添加"
+    INSERT_D                "添加氧减事件\n添加"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    INSERT_H                "添加低通气事件\\添加"
+    DELETE_E                "删除选定事件\n删除"
+    UPDATE_E                "更改选定事件\n更新"
+    RESULT_SHOW             "显示统计结果\n显示"
+    EVENT_SHOW              "事件列表显示\n列表"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SAS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,175 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SAS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/SAS.res" /d "NDEBUG" "H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SAS.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP23C4.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SAS.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\MainFrm.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\ResultDialog.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SAS.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SASDoc.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SASView.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SCase.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SCaseData.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SCaseDisplay.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SCaseFile.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SCaseNew.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SConfig.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SetColor.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SetConfig.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SEventData.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SEventList.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SResultDialog.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP23C4.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP23C5.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SAS.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP23C5.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP23C6.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/SAS.pdb" /machine:I386 /out:"Release/SAS.exe" 
+".\Release\MainFrm.obj"
+".\Release\ResultDialog.obj"
+".\Release\SAS.obj"
+".\Release\SASDoc.obj"
+".\Release\SASView.obj"
+".\Release\SCase.obj"
+".\Release\SCaseData.obj"
+".\Release\SCaseDisplay.obj"
+".\Release\SCaseFile.obj"
+".\Release\SCaseNew.obj"
+".\Release\SConfig.obj"
+".\Release\SetColor.obj"
+".\Release\SetConfig.obj"
+".\Release\SEventData.obj"
+".\Release\SEventList.obj"
+".\Release\SResultDialog.obj"
+".\Release\StdAfx.obj"
+".\Release\SAS.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP23C6.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+h:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\sas\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Compiling...
+MainFrm.cpp
+ResultDialog.cpp
+SAS.cpp
+SASDoc.cpp
+SASView.cpp
+SCase.cpp
+SCaseData.cpp
+SCaseDisplay.cpp
+SCaseFile.cpp
+SCaseNew.cpp
+SConfig.cpp
+SetColor.cpp
+SetConfig.cpp
+SEventData.cpp
+SEventList.cpp
+SResultDialog.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SAS.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SAS - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/SAS.res" /d "_DEBUG" /d "_AFXDLL" "H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SAS.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP4683.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/SAS.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\MainFrm.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\ResultDialog.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SAS.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SASDoc.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SASView.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SCase.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SCaseData.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SCaseDisplay.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SCaseFile.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SCaseNew.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SConfig.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SetColor.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SetConfig.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SEventData.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SEventList.cpp"
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\SResultDialog.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP4683.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP4684.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/SAS.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\SAS\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP4684.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP4695.tmp" with contents
+[
+/nologo /subsystem:windows /profile /debug /machine:I386 /out:"Debug/SAS.exe" 
+".\Debug\MainFrm.obj"
+".\Debug\ResultDialog.obj"
+".\Debug\SAS.obj"
+".\Debug\SASDoc.obj"
+".\Debug\SASView.obj"
+".\Debug\SCase.obj"
+".\Debug\SCaseData.obj"
+".\Debug\SCaseDisplay.obj"
+".\Debug\SCaseFile.obj"
+".\Debug\SCaseNew.obj"
+".\Debug\SConfig.obj"
+".\Debug\SetColor.obj"
+".\Debug\SetConfig.obj"
+".\Debug\SEventData.obj"
+".\Debug\SEventList.obj"
+".\Debug\SResultDialog.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SAS.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP4695.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+h:\课程工程实现最终版+实验报告v-16\课程工程实现最终版+实验报告v-16\课程工程实现v-16\工程代码及文档\工程代码\sas\debug\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Compiling...
+MainFrm.cpp
+ResultDialog.cpp
+SAS.cpp
+SASDoc.cpp
+SASView.cpp
+SCase.cpp
+SCaseData.cpp
+SCaseDisplay.cpp
+SCaseFile.cpp
+SCaseNew.cpp
+SConfig.cpp
+SetColor.cpp
+SetConfig.cpp
+SEventData.cpp
+SEventList.cpp
+SResultDialog.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SAS.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
